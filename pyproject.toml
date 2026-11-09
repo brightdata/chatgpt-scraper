@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chatgpt-scraper"
+version = "0.1.0"
+description = "ChatGPT scraper in Python: ChatGPT answers, citations and sources for any prompt as JSON, by country, with web search and follow-up prompts, on the Bright Data ChatGPT Scraper API. No OpenAI API key, no browser, no dependencies. 5,000 free credits a month."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+chatgpt-scraper = "chatgpt_scraper.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/brightdata/chatgpt-scraper"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chatgpt_scraper"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]  # a literal API payload reads better on one line
