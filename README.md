@@ -1,7 +1,7 @@
 # ChatGPT scraper for Python
 
 Scrape ChatGPT answers, citations and sources to JSON with Python. Track brand visibility in ChatGPT. No OpenAI API key.
-Built on the [Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github). New accounts get 5,000 free credits a month.
+Built on the [Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github&utm_medium=referral&utm_content=chatgpt-scraper). New accounts get 5,000 free credits a month.
 
 [![Live check](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml)
 [![last verified](https://img.shields.io/badge/last%20verified-9%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
@@ -13,7 +13,7 @@ shows in its own interface, as text, Markdown and HTML, with the sites it
 cited, by country, with web search and follow-up prompts. Built for ChatGPT
 visibility tracking and GEO: which brands ChatGPT mentions and recommends, and
 which sources it cites. No OpenAI API key, no browser, no dependencies. Built on the
-[Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github).
+[Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github&utm_medium=referral&utm_content=chatgpt-scraper).
 
 Also here: a one-command CLI for a list of prompts, and the
 [Bright Data CLI](#chatgpt-mcp-server-and-claude-code-skill), which needs no Python at all.
