@@ -70,7 +70,7 @@ jobs:
           def block(text, lang):
               return re.search(r"```" + lang + r"\n(.*?)```", text, re.S).group(1)
 
-          quick = section("How to scrape ChatGPT answers with Python")
+          quick = section("How to scrape ChatGPT results with Python")
           snippet = block(quick, "python")
           command = block(section("Bulk ChatGPT prompt scraper CLI"), "bash")
           for required, where in (("BRIGHTDATA_API_TOKEN", snippet),
