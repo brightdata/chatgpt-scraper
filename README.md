@@ -4,7 +4,7 @@ Scrape ChatGPT answers, citations and sources to JSON with Python. Track brand v
 Built on the [Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github&utm_medium=referral&utm_content=chatgpt-scraper). New accounts get 5,000 free credits a month.
 
 [![Live check](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml)
-[![last verified](https://img.shields.io/badge/last%20verified-9%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
+[![last verified](https://img.shields.io/badge/last%20verified-10%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
 
 [Quickstart](#how-to-scrape-chatgpt-results-with-python) · [No OpenAI key](#scrape-chatgpt-without-an-openai-api-key) · [CLI](#bulk-chatgpt-prompt-scraper-cli) · [Citations](#track-chatgpt-citations-and-brand-visibility-for-a-prompt) · [Endpoints](#scrape-chatgpt-answers-citations-and-sources) · [Data](#chatgpt-answer-data-fields-json) · [Errors](#chatgpt-scraper-errors) · [MCP and Claude Code](#chatgpt-mcp-server-and-claude-code-skill) · [Free credits](#is-this-chatgpt-scraper-free) · [Docs](https://docs.brightdata.com/products/scrapers/chatgpt/introduction) · [Support](#support)
 
