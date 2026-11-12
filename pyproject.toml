@@ -3,12 +3,23 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "chatgpt-scraper"
-version = "0.1.0"
+name = "brightdata-chatgpt-scraper"
+dynamic = ["version"]
 description = "ChatGPT scraper in Python: ChatGPT answers, citations and sources for any prompt as JSON, by country, with web search and follow-up prompts, on the Bright Data ChatGPT Scraper API. No OpenAI API key, no browser, no dependencies. 5,000 free credits a month."
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
+authors = [{ name = "Bright Data" }]
+keywords = ["chatgpt", "chatgpt-scraper", "scraper", "web-scraping", "bright-data", "chatgpt-api", "llm", "ai-search", "geo"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP",
+]
 dependencies = []
 
 [project.optional-dependencies]
@@ -19,6 +30,13 @@ chatgpt-scraper = "chatgpt_scraper.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/brightdata/chatgpt-scraper"
+Documentation = "https://docs.brightdata.com/products/scrapers/chatgpt/introduction"
+Source = "https://github.com/brightdata/chatgpt-scraper"
+Issues = "https://github.com/brightdata/chatgpt-scraper/issues"
+Changelog = "https://github.com/brightdata/chatgpt-scraper/blob/main/CHANGELOG.md"
+
+[tool.hatch.version]
+path = "src/chatgpt_scraper/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/chatgpt_scraper"]

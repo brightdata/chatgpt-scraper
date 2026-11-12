@@ -4,7 +4,7 @@ Scrape ChatGPT answers, citations and sources to JSON with Python. Track brand v
 Built on the [Bright Data ChatGPT Scraper API](https://brightdata.com/products/web-scraper/chatgpt?utm_source=github&utm_medium=referral&utm_content=chatgpt-scraper). New accounts get 5,000 free credits a month.
 
 [![Live check](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml)
-[![last verified](https://img.shields.io/badge/last%20verified-11%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
+[![last verified](https://img.shields.io/badge/last%20verified-11%20Nov%202026-brightgreen)](https://github.com/brightdata/chatgpt-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the weekly run -->
 
 [Quickstart](#how-to-scrape-chatgpt-results-with-python) · [No OpenAI key](#scrape-chatgpt-without-an-openai-api-key) · [CLI](#bulk-chatgpt-prompt-scraper-cli) · [Citations](#track-chatgpt-citations-and-brand-visibility-for-a-prompt) · [Endpoints](#scrape-chatgpt-answers-citations-and-sources) · [Data](#chatgpt-answer-data-fields-json) · [Errors](#chatgpt-scraper-errors) · [MCP and Claude Code](#chatgpt-mcp-server-and-claude-code-skill) · [Free credits](#is-this-chatgpt-scraper-free) · [Docs](https://docs.brightdata.com/products/scrapers/chatgpt/introduction) · [Support](#support)
 
@@ -333,7 +333,7 @@ hardcodes no field list. Whatever the API returns lands in each record, and
 in the command's file.
 
 <!-- fields:start -->
-Regenerated every day from the published schema,
+Regenerated every week from the published schema,
 [scrapers-full.json](https://docs.brightdata.com/scrapers-full.json), so they cannot go stale. A record
 carries the fields that apply to it, plus `timestamp` and `input`; the
 sample file's first answer has 33 keys.
@@ -409,7 +409,7 @@ Each line is cut at 160 characters here; `answer_html` alone is a 1.4 MB line.
 ```
 
 The whole file, one answer with every field, is
-[examples/sample_output.json](examples/sample_output.json).
+[examples/sample_output.json](https://github.com/brightdata/chatgpt-scraper/blob/main/examples/sample_output.json).
 
 </details>
 
@@ -473,13 +473,13 @@ The ChatGPT scraper bills per record, one per answer.
 
 Bugs in this repo:
 [open an issue](https://github.com/brightdata/chatgpt-scraper/issues), and
-[CONTRIBUTING.md](CONTRIBUTING.md) says what to put in it.
+[CONTRIBUTING.md](https://github.com/brightdata/chatgpt-scraper/blob/main/CONTRIBUTING.md) says what to put in it.
 Anything about the API, your account or your credits:
 [Bright Data support](https://brightdata.zendesk.com/hc/en-us/requests/new).
 
 ## License
 
-[Apache 2.0](LICENSE).
+[Apache 2.0](https://github.com/brightdata/chatgpt-scraper/blob/main/LICENSE).
 
 ## ChatGPT scraper for Node.js
 

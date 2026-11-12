@@ -285,7 +285,7 @@ def test_the_readme_excerpt_is_the_start_of_the_example_file():
     lines = [ln if len(ln) <= 160 else ln[:160] + "..." for ln in sample.splitlines()[:20]]
 
     assert "\n".join(lines) in readme, "README excerpt drifted from the file"
-    assert "](examples/sample_output.json)" in readme
+    assert "/blob/main/examples/sample_output.json)" in readme  # absolute: PyPI shows this README
 
 
 def test_every_in_page_link_has_its_heading():
